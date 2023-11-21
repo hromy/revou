@@ -1,0 +1,157 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background: #186049;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  /* input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    width: 50%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    float: right;
+    text-align: center;
+  } */
+
+  /* button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    font-size: medium;
+    border: none;
+  } */
+  
+  /* input[type=submit]:hover {
+    background-color: #247158;
+  } */
+
+  /* button:hover {
+    background-color: #247158;
+  } */
+  
+  .container {
+    width: 30%;
+    height: 60%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .container h1 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .container p {
+    text-align: center;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    input[type=radio]{
+      margin: auto;
+    }
+    .container{
+      width: 50%;
+      height: auto;
+    }
+    label{
+      font-size: 12;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    
+    .container{
+      width: 70%;
+      height: auto;
+    }
+    label{
+      font-size: 12;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    padding-top: 15px;
+    display: block;
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  #submit {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    color: #fff;
+    margin: auto;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #0a8ef2;
+}

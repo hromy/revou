@@ -6,24 +6,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Kalkulator BMI</h1>
-    <h2>Mempermudah Dalam Menenentukan Berat Badan Ideal</h2>
     <div class="container">
-        <p class="pjk">Pilih Jenis Kelamin :</p>
-        <form>
-            <input type="radio" id="laki" name="jk" value="Laki-Laki">
-            <label for="laki">Laki-Laki</label><br>
-            <input type="radio" id="perempuan" name="jk" value="Perempuan">
-            <label for="perempuan">Perempuan</label><br>
-        </form>
-        <form>
-            <label for="bbadan">Berat Badan (Kg)</label>
-            <input type="text" id="bbadan" name="bbadan">
+        <div>
+            <h1>Kalkulator BMI</h1>
+        </div>
+        <div>
+            <p><b>Temukan Idealmu!</b></p>
+        </div>
+        <form action="" id="form" onsubmit="return validateForm()">  
+        <div class="row">
+            <div class="col-25">
+              <label for="jkelamin">Jenis Kelamin</label>
+            </div>
+            <div class="col-75">
+              <input type="radio" id="laki" name="radio" value="Laki-Laki" required>
+              <label for="laki">Laki-Laki</label>
+              <input type="radio" id="perempuan" name="radio" value="Perempuan" required>
+              <label for="perempuan">Perempuan</label>
+            </div>
+            <!-- <div class="col-75">
+              <select id="jkelamin" name="jeniskelamin">
+                <option value="">Pilih</option>
+                <option value="laki-laki">Laki-Laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </div> -->
+        </div>
+        <div class="row">
+          <div class="col-25">
             <label for="usia">Usia (Tahun)</label>
-            <input type="text" id="usia" name="usia">
+          </div>
+          <div class="col-75">
+            <input type="text" id="usia" name="usia" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="bbadan">Berat Badan (Kg)</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="bbadan" name="beratbadan" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
             <label for="tbadan">Tinggi Badan (Cm)</label>
-            <input type="text" id="tbadan" name="tbadan">
-          </form>
+          </div>
+          <div class="col-75">
+            <input type="text" id="tbadan" name="tinggibadan" required>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <!-- <input type="submit" id="submit" value="Hitung"> -->
+          <button type="button" id="submit" style="background: #04AA6D;">Hitung</button>
+        </div>
+      </form>
     </div>
+  <script src="main.js"></script>
 </body>
 </html>
